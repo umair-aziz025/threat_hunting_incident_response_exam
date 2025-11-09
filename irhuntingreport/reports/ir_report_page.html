@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lab #4 — Report Builder | Red Team Leaders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{
+      --bg:#0c1118; --panel:#0f1622; --text:#e8f0fa; --muted:#a3b2c6; --border:#1b2635;
+      --chip:#132033; --accent:#3da5ff; --ok:#1abc9c; --warn:#f1c40f; --bad:#ff6b6b;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0b1017,#0a0f15);color:var(--text);font:14px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    header{position:sticky;top:0;z-index:5;background:rgba(10,15,21,.9);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:12px 14px}
+    h1{margin:0;font-size:18px}
+    .sub{color:var(--muted);font-size:12px}
+    .container{max-width:1600px;margin:0 auto;padding:12px}
+    .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:12px}
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:12px}
+    .title{font-weight:600;margin:0 0 8px 0}
+    .logs{background:#0d1420;border:1px solid var(--border);border-radius:10px;padding:8px;max-height:360px;overflow:auto;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .chip{display:inline-block;border:1px solid var(--border);background:var(--chip);color:#dfe8f5;border-radius:999px;padding:4px 8px;font-size:12px;cursor:grab}
+    .chip:active{cursor:grabbing}
+    .drop{border:1px dashed #2a3a55;background:#0b1524;border-radius:10px;min-height:38px;padding:6px;margin:4px 0}
+    input,textarea{width:100%;padding:8px;border-radius:10px;border:1px solid var(--border);background:#0d1420;color:#e8f0fa;outline:none}
+    textarea{min-height:108px}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+    button{border:1px solid var(--border);background:#0f1a2a;padding:8px 12px;border-radius:10px;color:var(--text);cursor:pointer}
+    button.primary{background:linear-gradient(180deg,#133456,#0f2740)}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .stepper{display:flex;gap:6px;align-items:center;margin-top:10px}
+    .step{padding:6px 10px;border-radius:10px;border:1px solid var(--border);background:#0e1827;cursor:pointer}
+    .step.active{background:#163251;border-color:#27486f}
+    .flag{background:#0d1c2e;border:1px dashed #234; padding:8px;border-radius:10px;margin-top:6px;display:none}
+    .recap{background:#0c1422;border:1px solid var(--border);border-radius:12px;padding:10px;margin-top:10px}
+    .muted{color:#b3c4d8}
+    .counter{font-size:11px;color:#8fb1d6;text-align:right;margin-top:2px}
+    @media (max-width:1100px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lab #4 — Report Builder</h1>
+    <div class="sub">Build a precise IR/TH report. Each narrative block must be ≥150 characters and include scenario keywords. Timestamp format hint uses zeros — no spoilers.</div>
+  </header>
+  <div class="container">
+    <div class="toolbar">
+      <div class="stepper" id="stepper"></div>
+      <div>
+        <button id="prevBtn">◀ Prev</button>
+        <button id="nextBtn">Next ▶</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <div class="title">Evidence Panel — <span id="caseTitle">Case</span></div>
+        <div class="logs" id="logs"></div>
+        <div style="height:8px"></div>
+        <div class="cols">
+          <div>
+            <div class="muted">Title Suggestions</div>
+            <div id="chipsTitles" class="row"></div>
+          </div>
+          <div>
+            <div class="muted">MITRE</div>
+            <div id="chipsMitre" class="row"></div>
+          </div>
+          <div>
+            <div class="muted">Hosts</div>
+            <div id="chipsHosts" class="row"></div>
+          </div>
+          <div>
+            <div class="muted">Accounts</div>
+            <div id="chipsAccounts" class="row"></div>
+          </div>
+          <div>
+            <div class="muted">IOCs</div>
+            <div id="chipsIocs" class="row"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="title">Report Builder</div>
+
+        <label>Title</label>
+        <div class="drop" id="dropTitle" data-type="title" ondragover="allowDrop(event)" ondrop="onDrop(event)">
+          <input id="titleInput" placeholder="Drag a suggestion or type a precise title (e.g., 'DNS Exfiltration via TXT Records')">
+        </div>
+
+        <div class="cols">
+          <div>
+            <label>Timestamp (UTC, ISO 8601)</label>
+            <input id="tsInput" placeholder="0000-00-00T00:00:00Z">
+            <div class="muted" style="font-size:11px;margin-top:4px;">Format example only. UI does not reveal valid window.</div>
+          </div>
+          <div>
+            <label>MITRE TTPs</label>
+            <div class="drop" id="dropMitre" data-type="mitre" ondragover="allowDrop(event)" ondrop="onDrop(event)"></div>
+          </div>
+        </div>
+
+        <label>Description (what happened)</label>
+        <textarea id="descInput" placeholder="Explain end-to-end: protocols, tools, techniques, indicators, objectives, and timing correlation. Must include technical keywords and be ≥150 chars."></textarea>
+        <div class="counter"><span id="descCount">0</span> chars</div>
+
+        <div class="cols">
+          <div>
+            <label>Impacted Hosts</label>
+            <div class="drop" id="dropHosts" data-type="hosts" ondragover="allowDrop(event)" ondrop="onDrop(event)"></div>
+          </div>
+          <div>
+            <label>Impacted Accounts</label>
+            <div class="drop" id="dropAccounts" data-type="accounts" ondragover="allowDrop(event)" ondrop="onDrop(event)"></div>
+          </div>
+        </div>
+
+        <label>IOCs</label>
+        <div class="drop" id="dropIocs" data-type="iocs" ondragover="allowDrop(event)" ondrop="onDrop(event)"></div>
+
+        <div class="cols">
+          <div>
+            <label>Containment</label>
+            <textarea id="containInput" placeholder="Detail immediate isolation/blocks/policies with specificity (≥150 chars). Include concrete measures and tools."></textarea>
+            <div class="counter"><span id="containCount">0</span> chars</div>
+          </div>
+          <div>
+            <label>Eradication</label>
+            <textarea id="eradInput" placeholder="Detail removal of tooling/persistence, cleanup, and configuration changes (≥150 chars)."></textarea>
+            <div class="counter"><span id="eradCount">0</span> chars</div>
+          </div>
+        </div>
+
+        <label>Recovery</label>
+        <textarea id="recInput" placeholder="Detail account/token resets, monitoring, baselining, awareness, and validations (≥150 chars)."></textarea>
+        <div class="counter"><span id="recCount">0</span> chars</div>
+
+        <div class="row" style="margin-top:10px;">
+          <button id="submitBtn" class="primary">Validate & Submit</button>
+          <div id="flagBox" class="flag mono"></div>
+        </div>
+        <div id="errors" class="recap"></div>
+      </div>
+    </div>
+
+    <div class="panel recap">
+      <div class="title">Progress</div>
+      <div id="progress"></div>
+    </div>
+  </div>
+
+<script>
+let scenarios = [];
+let idx = 0;
+let flags = {};
+
+function esc(s){return (s||'').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function fetchScenarios(){
+  fetch('/api/scenarios').then(r=>r.json()).then(js=>{
+    scenarios = js;
+    buildStepper();
+    showScenario(0);
+  });
+}
+function buildStepper(){
+  const stepper = document.getElementById('stepper');
+  stepper.innerHTML = scenarios.map((s,i)=>'<div class="step'+(i===0?' active':'')+'" onclick="showScenario('+i+')">'+esc(s.title)+'</div>').join('');
+}
+function markActiveStep(){
+  const nodes = document.querySelectorAll('.stepper .step');
+  nodes.forEach((n,i)=> n.classList.toggle('active', i===idx));
+}
+function showScenario(i){
+  idx = i; markActiveStep();
+  const s = scenarios[idx];
+  document.getElementById('caseTitle').textContent = s.title;
+
+  const logsEl = document.getElementById('logs'); logsEl.innerHTML = '';
+  (s.logs||[]).concat(['']).concat(s.telemetry||[]).forEach(line=>{
+    const div = document.createElement('div'); div.textContent = line; logsEl.appendChild(div);
+  });
+
+  renderChips('chipsTitles', s.palette.title_suggestions, 'title');
+  renderChips('chipsMitre', s.palette.mitre, 'mitre');
+  renderChips('chipsHosts', s.palette.hosts, 'hosts');
+  renderChips('chipsAccounts', s.palette.accounts, 'accounts');
+  renderChips('chipsIocs', s.palette.iocs, 'iocs');
+
+  
+  setVal('titleInput',''); setVal('tsInput','');
+  setVal('descInput',''); setVal('containInput',''); setVal('eradInput',''); setVal('recInput','');
+  document.getElementById('descCount').textContent='0';
+  document.getElementById('containCount').textContent='0';
+  document.getElementById('eradCount').textContent='0';
+  document.getElementById('recCount').textContent='0';
+  ['dropMitre','dropHosts','dropAccounts','dropIocs'].forEach(id=>document.getElementById(id).innerHTML='');
+
+  const fb = document.getElementById('flagBox'); fb.style.display='none'; fb.textContent='';
+  renderProgress();
+  document.getElementById('errors').innerHTML='';
+}
+function setVal(id,v){ document.getElementById(id).value=v; }
+
+['descInput','containInput','eradInput','recInput'].forEach(id=>{
+  document.addEventListener('input', (e)=>{ if(e.target && e.target.id===id){
+    const cnt = e.target.value.length;
+    const map = {descInput:'descCount', containInput:'containCount', eradInput:'eradCount', recInput:'recCount'};
+    document.getElementById(map[id]).textContent = String(cnt);
+  }});
+});
+
+function renderChips(containerId, arr, dtype){
+  const el = document.getElementById(containerId);
+  el.innerHTML = (arr||[]).map(v=>'<div class="chip" draggable="true" ondragstart="onDragStart(event)" data-type="'+dtype+'" data-val="'+esc(v)+'">'+esc(v)+'</div>').join('');
+}
+function allowDrop(ev){ ev.preventDefault(); }
+function onDragStart(ev){
+  const t = ev.target;
+  ev.dataTransfer.setData('type', t.getAttribute('data-type'));
+  ev.dataTransfer.setData('val', t.getAttribute('data-val'));
+}
+function onDrop(ev){
+  ev.preventDefault();
+  const type = ev.dataTransfer.getData('type');
+  const val = ev.dataTransfer.getData('val');
+  const targetType = ev.currentTarget.getAttribute('data-type');
+  if(type !== targetType && !(targetType==='title' && type==='title')) return;
+  if(targetType==='title'){
+    document.getElementById('titleInput').value = val;
+  } else {
+    const chip = document.createElement('span');
+    chip.className='chip'; chip.textContent = val; chip.setAttribute('data-val', val); chip.style.cursor='default';
+    ev.currentTarget.appendChild(chip);
+  }
+}
+
+document.getElementById('prevBtn').addEventListener('click', ()=>{ if(idx>0){ showScenario(idx-1);} });
+document.getElementById('nextBtn').addEventListener('click', ()=>{ if(idx<scenarios.length-1){ showScenario(idx+1);} });
+
+document.getElementById('submitBtn').addEventListener('click', ()=>{
+  const s = scenarios[idx];
+  const mitre = getChips('#dropMitre');
+  const hosts = getChips('#dropHosts');
+  const accounts = getChips('#dropAccounts');
+  const iocs = getChips('#dropIocs');
+
+  const payload = {
+    scenario_id: s.id,
+    title: val('titleInput'),
+    timestamp: val('tsInput'),
+    description: val('descInput'),
+    mitre: mitre,
+    impacted_hosts: hosts,
+    impacted_accounts: accounts,
+    iocs: iocs,
+    containment: val('containInput'),
+    eradication: val('eradInput'),
+    recovery: val('recInput')
+  };
+
+  fetch('/api/submit', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)})
+    .then(r=>r.json())
+    .then(j=>{
+      const errBox = document.getElementById('errors'); errBox.innerHTML='';
+      if(j.ok){
+        flags[s.code] = j.flag;
+        const fb = document.getElementById('flagBox'); fb.style.display='block'; fb.textContent = 'FLAG: '+j.flag+' — Saved.';
+        renderProgress();
+      } else {
+        const ul = document.createElement('ul'); (j.errors||[]).forEach(e=>{ const li=document.createElement('li'); li.textContent=e; ul.appendChild(li); });
+        errBox.appendChild(ul);
+      }
+    })
+    .catch(()=> alert('Submit failed'));
+});
+
+function getChips(sel){ return Array.from(document.querySelectorAll(sel+' .chip')).map(x=>x.getAttribute('data-val')||x.textContent); }
+function val(id){ return document.getElementById(id).value; }
+
+function renderProgress(){
+  const box = document.getElementById('progress');
+  const done = Object.keys(flags).length; const total = scenarios.length;
+  let html = '<div>'+done+' / '+total+' flags earned</div>';
+  if(done>0){
+    html += '<div class="muted">Collected:</div><div class="row">';
+    Object.entries(flags).forEach(([k,v])=>{ html += '<div class="chip">'+esc(k)+': '+esc(v)+'</div>'; });
+    html += '</div>';
+  }
+  box.innerHTML = html;
+}
+
+fetchScenarios();
+</script>
+</body>
+</html>

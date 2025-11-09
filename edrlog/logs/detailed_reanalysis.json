@@ -1,0 +1,202 @@
+[
+  {
+    "question_num": 1,
+    "question": "Unsigned loader installs vulnerable signed driver (BYOVD)",
+    "detection_id": 1001,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Unsigned loader (BYOVD attack)"
+    ]
+  },
+  {
+    "question_num": 2,
+    "question": "DLL injection into notepad.exe using CreateRemoteThread",
+    "detection_id": 1002,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Code injection into notepad"
+    ]
+  },
+  {
+    "question_num": 3,
+    "question": "Dropper downloads and stages second-stage payload",
+    "detection_id": 1003,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Dropper staging payload"
+    ]
+  },
+  {
+    "question_num": 4,
+    "question": "LSASS memory dump via alternate method (mimikatz variant)",
+    "detection_id": 1004,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: LSASS credential dumping"
+    ]
+  },
+  {
+    "question_num": 5,
+    "question": "Hookchain.exe injects code into explorer.exe",
+    "detection_id": 1005,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Known injection tool Hookchain.exe"
+    ]
+  },
+  {
+    "question_num": 6,
+    "question": "LOLBIN: certutil downloads remote payload",
+    "detection_id": 1006,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Certutil downloading remote payload"
+    ]
+  },
+  {
+    "question_num": 7,
+    "question": "LOLBIN: regsvr32 executes remote scrobj COM script",
+    "detection_id": 1007,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Regsvr32 remote scriptlet execution"
+    ]
+  },
+  {
+    "question_num": 8,
+    "question": "LOLBIN: mshta loads remote HTA executing commands",
+    "detection_id": 1008,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Mshta loading remote HTA from external IP"
+    ]
+  },
+  {
+    "question_num": 9,
+    "question": "LOLBIN: bitsadmin transfers staged binary",
+    "detection_id": 1009,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Bitsadmin transferring binary from external source"
+    ]
+  },
+  {
+    "question_num": 10,
+    "question": "LOLBIN: installutil runs malicious assembly",
+    "detection_id": 1010,
+    "verdict": "\u274c TRUE POSITIVE (MALICIOUS)",
+    "answer": "RTL{TP}",
+    "reasoning": [
+      "\u274c MALICIOUS: Filename contains 'evil.dll'"
+    ]
+  },
+  {
+    "question_num": 11,
+    "question": "Backup agent bulk file reads & HTTPS upload to cloud",
+    "detection_id": 1011,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: Legitimate enterprise backup to vendor cloud"
+    ]
+  },
+  {
+    "question_num": 12,
+    "question": "Driver update utility installing vendor-signed driver",
+    "detection_id": 1012,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: Vendor-signed driver update"
+    ]
+  },
+  {
+    "question_num": 13,
+    "question": "ProcDump used to capture w3wp.exe for troubleshooting",
+    "detection_id": 1013,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: ProcDump on IIS (w3wp), not LSASS"
+    ]
+  },
+  {
+    "question_num": 14,
+    "question": "MSBuild post-build PowerShell script (Dev pipeline)",
+    "detection_id": 1014,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: CI/CD build automation"
+    ]
+  },
+  {
+    "question_num": 15,
+    "question": "Remote admin tool pushes patch via PsExec-like service",
+    "detection_id": 1015,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: IT admin tool pushing patches"
+    ]
+  },
+  {
+    "question_num": 16,
+    "question": "LOLBIN: certutil verifies certificate chain for VPN",
+    "detection_id": 1016,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: Certutil verifying certificate"
+    ]
+  },
+  {
+    "question_num": 17,
+    "question": "LOLBIN: regsvr32 registers vendor DLL (signed",
+    "detection_id": 1017,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: Registering signed vendor DLL"
+    ]
+  },
+  {
+    "question_num": 18,
+    "question": "LOLBIN: mshta launches corporate enrollment page",
+    "detection_id": 1018,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: Corporate enrollment page (internal domain)"
+    ]
+  },
+  {
+    "question_num": 19,
+    "question": "LOLBIN: rundll32 opens Control Panel applet",
+    "detection_id": 1019,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: Notes indicate legitimate activity"
+    ]
+  },
+  {
+    "question_num": 20,
+    "question": "LOLBIN: bitsadmin used by Windows Update",
+    "detection_id": 1020,
+    "verdict": "\u2705 FALSE POSITIVE (BENIGN)",
+    "answer": "RTL{FP}",
+    "reasoning": [
+      "\u2705 BENIGN: Windows Update service using BITS"
+    ]
+  }
+]

