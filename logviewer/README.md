@@ -173,5 +173,3 @@ This investigation demonstrates proficiency in:
 **Retention**: Keep for certification verification
 
 ---
-
-*This investigation package is complete and ready for exam submission.*
