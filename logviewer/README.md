@@ -161,7 +161,6 @@ This investigation demonstrates proficiency in:
 ## 📧 Contact
 
 **Investigator**: Umair Aziz  
-**Repository**: Deltaware_solution_internship_task  
 **Date**: November 9, 2025
 
 ---
