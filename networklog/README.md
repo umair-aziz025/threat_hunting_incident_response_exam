@@ -1,53 +1,49 @@
-# Network Traffic Investigation - Complete Package
+# Challenge 2 - Network Log Investigation
 ## Data Exfiltration & C2 Detection Analysis
+
+**Challenge Date**: November 9, 2025  
+**Status**: ✅ COMPLETE (10/10 flags captured)
 
 ---
 
 ## 📁 Directory Structure
 
 ```
-Network_Traffic_Investigation_Complete/
+networklog/
 │
-├── README.md                          (This file)
+├── README.md                          # This file
+├── challenge_file/                    # Original challenge files
 │
-├── scripts/                           (Analysis Scripts)
+├── scripts/                           # Analysis Scripts
 │   ├── 01_extract_network_logs.py    - Extract all 927 logs from IR server
 │   ├── 02_analyze_exfiltration_c2.py - Comprehensive analysis of exfil & C2
 │   ├── 03_extract_answers.py         - Extract specific answers to questions
 │   └── 04_verify_answers.py          - Verify all answers against log data
 │
-├── logs/                              (Network Traffic Data)
+├── logs/                              # Network Traffic Data
 │   ├── all_network_logs.json         - Complete dataset (927 network logs)
 │   └── answers.json                  - All exam answers in JSON format
 │
-└── reports/                           (Investigation Reports)
+└── reports/                           # Investigation Reports
     ├── FINAL_ANSWERS.md              - Complete answers with evidence
     ├── EXECUTIVE_SUMMARY.md          - High-level findings summary
-    └── QUICK_REFERENCE.md            - Quick answer lookup sheet
+    ├── QUICK_REFERENCE.md            - Quick answer lookup sheet
+    └── INVESTIGATION_COMPLETE.md     - Complete investigation details
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🎯 Challenge Overview
 
-### Prerequisites
-- Python 3.x
-- Required libraries: `requests`, `json`, `base64`
+This challenge focuses on analyzing network traffic logs to identify data exfiltration and command & control (C2) activities. The investigation covers:
 
-### Running the Analysis
+- **Data Exfiltration Detection**
+- **C2 Communication Analysis**
+- **Protocol Analysis (DNS, HTTP, HTTPS)**
+- **IOC Extraction**
 
-1. **Extract Network Logs** (if server is running):
-   ```bash
-   python scripts/01_extract_network_logs.py
-   ```
-
-2. **Analyze Exfiltration and C2**:
-   ```bash
-   python scripts/02_analyze_exfiltration_c2.py
-   ```
-
-3. **Extract Specific Answers**:
-   ```bash
+**Total Logs Analyzed**: 927 network events  
+**Flags Captured**: 10/10 (100%)
    python scripts/03_extract_answers.py
    ```
 

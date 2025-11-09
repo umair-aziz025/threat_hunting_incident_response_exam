@@ -1,4 +1,4 @@
-# WEEK 7 - IR Hunting Report Builder
+# Challenge 4 - IR Hunting Report Builder
 
 ## Challenge Overview
 **Type:** Incident Response Report Creation  

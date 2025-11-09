@@ -1,4 +1,4 @@
-# WEEK 6 - EDR Telemetry Validation
+# Challenge 3 - EDR Telemetry Validation
 
 ## Quick Overview
 Interactive challenge where 20 EDR detections must be classified as malicious (BLOCK) or benign (ALLOW).

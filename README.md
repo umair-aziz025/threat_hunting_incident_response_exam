@@ -17,11 +17,13 @@ This repository contains the complete investigation work, scripts, and documenta
 
 | Challenge | Status | Flags | Success Rate |
 |-----------|--------|-------|--------------|
-| **WEEK 6:** EDR Telemetry Validation | ✅ Complete | 20/20 | 100% |
-| **WEEK 7:** IR Hunting Report Builder | ✅ Complete | 5/5 | 100% |
-| **Quiz:** Security Knowledge Assessment | ✅ Complete | 11/11 | 100% |
+| **Challenge 1:** Log Viewer Analysis | ✅ Complete | 10/10 | 100% |
+| **Challenge 2:** Network Log Investigation | ✅ Complete | 10/10 | 100% |
+| **Challenge 3:** EDR Telemetry Validation | ✅ Complete | 20/20 | 100% |
+| **Challenge 4:** IR Hunting Report Builder | ✅ Complete | 5/5 | 100% |
+| **Final Quiz:** Security Knowledge Assessment | ✅ Complete | 11/11 | 100% |
 
-**Overall Achievement:** 36/36 (100%)
+**Overall Achievement:** 56/56 (100%)
 
 ---
 
@@ -29,23 +31,35 @@ This repository contains the complete investigation work, scripts, and documenta
 
 ```
 CTHIRI_Investigation_Complete/
-├── edrlog/                      # WEEK 6 - EDR Telemetry Validation
+├── logviewer/                   # Challenge 1 - Log Viewer Analysis
+│   ├── challenge_file/          # Original challenge files
+│   ├── logs/                    # Extracted log data
+│   ├── reports/                 # Investigation reports
+│   ├── scripts/                 # Analysis scripts
+│   └── README.md                # Challenge documentation
+│
+├── networklog/                  # Challenge 2 - Network Log Investigation
+│   ├── challenge_file/          # Original challenge files
+│   ├── logs/                    # Network traffic logs
+│   ├── reports/                 # Investigation reports
+│   ├── scripts/                 # Analysis scripts
+│   └── README.md                # Challenge documentation
+│
+├── edrlog/                      # Challenge 3 - EDR Telemetry Validation
 │   ├── challenge_file/          # Original challenge files
 │   ├── logs/                    # EDR detection logs
 │   ├── reports/                 # Investigation reports
 │   ├── scripts/                 # Analysis scripts
 │   └── README.md                # Challenge documentation
 │
-├── irhuntingreport/             # WEEK 7 - IR Hunting Report Builder
+├── irhuntingreport/             # Challenge 4 - IR Hunting Report Builder
 │   ├── challenge_file/          # Original challenge files
 │   ├── logs/                    # Incident case logs
 │   ├── reports/                 # Incident reports
 │   ├── scripts/                 # Report generation scripts
 │   └── README.md                # Challenge documentation
 │
-├── logviewer/                   # Log viewer utilities
-├── networklog/                  # Network log analysis
-├── quiz/                        # Security knowledge quiz
+├── quiz/                        # Final Quiz - Security Knowledge Assessment
 │   └── QUIZ_ANSWERS.md          # Quiz answers with explanations
 │
 └── README.md                    # This file
@@ -100,14 +114,26 @@ CTHIRI_Investigation_Complete/
 
 ## 📈 Challenge Statistics
 
-### WEEK 6: EDR Telemetry Validation
+### Challenge 1: Log Viewer Analysis
+- **Total Questions:** 10
+- **Correct Answers:** 10/10 (100%)
+- **Attack Vectors:** SQL Injection, XSS, Path Traversal, Authentication Bypass
+- **Key Skills:** Log pattern recognition, attack signature identification
+
+### Challenge 2: Network Log Investigation
+- **Total Questions:** 10
+- **Correct Answers:** 10/10 (100%)
+- **Focus Areas:** C2 detection, data exfiltration, network traffic analysis
+- **Key Skills:** Protocol analysis, traffic pattern recognition, IOC extraction
+
+### Challenge 3: EDR Telemetry Validation
 - **Total Detections:** 20
 - **True Positives (BLOCK):** 10
 - **False Positives (ALLOW):** 10
 - **Accuracy:** 100%
 - **Key Skills:** EDR analysis, context-based classification, severity assessment
 
-### WEEK 7: IR Hunting Report Builder
+### Challenge 4: IR Hunting Report Builder
 - **Total Cases:** 5 complex incidents
 - **Flags Captured:** 5/5 (100%)
 - **MITRE Techniques Mapped:** 17
@@ -118,7 +144,7 @@ CTHIRI_Investigation_Complete/
   - HTTP C2 beaconing
   - HTTPS encrypted C2
 
-### Security Knowledge Quiz
+### Final Quiz: Security Knowledge Assessment
 - **Total Questions:** 11
 - **Correct Answers:** 11/11 (100%)
 - **Topics Covered:**

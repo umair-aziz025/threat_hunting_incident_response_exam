@@ -1,17 +1,17 @@
-# CTHIRI Exam - Complete Investigation Package
+# Challenge 1 - Log Viewer Analysis
 
-**Investigation Date**: November 9, 2025  
+**Challenge Date**: November 9, 2025  
 **Investigator**: Umair Aziz  
-**Case ID**: CTHIRI-2025-001  
-**Status**: ✅ COMPLETE
+**Status**: ✅ COMPLETE (10/10 flags captured)
 
 ---
 
 ## 📁 Directory Structure
 
 ```
-CTHIRI_Investigation_Complete/
+logviewer/
 ├── README.md                           # This file
+├── challenge_file/                     # Original challenge files
 ├── logs/
 │   └── all_logs_complete.json         # Complete dataset (500 events)
 ├── scripts/
@@ -21,14 +21,14 @@ CTHIRI_Investigation_Complete/
 └── reports/
     ├── FINAL_ANSWERS.md               # Complete answers with details
     ├── EXECUTIVE_SUMMARY.md           # Executive summary
-    └── INVESTIGATION_REPORT.md        # Full investigation report
+    └── QUICK_REFERENCE.md             # Quick reference guide
 ```
 
 ---
 
-## 🎯 Investigation Overview
+## 🎯 Challenge Overview
 
-This package contains the complete investigation of a sophisticated multi-stage cyberattack detected in the IR Training Log Server. The attack involved:
+This challenge involves analyzing security logs from the IR Training Log Server to identify a sophisticated multi-stage cyberattack that included:
 
 - **Kerberos Ticket Forgery** (Golden & Silver Tickets)
 - **Credential Theft** (LSASS Dump & Mimikatz)
@@ -37,7 +37,8 @@ This package contains the complete investigation of a sophisticated multi-stage 
 
 **Total Events Analyzed**: 500 security events  
 **Time Period**: August 18, 2025 (01:15 - 08:19 UTC)  
-**Attacker IP**: 10.10.5.23
+**Attacker IP**: 10.10.5.23  
+**Flags Captured**: 10/10 (100%)
 
 ---
 
